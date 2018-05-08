@@ -54,12 +54,9 @@ Give examples
 ```
 
 ## Starting the Application
-1.
-1.
-1.
-1.
-1.
-1.
+1. To Run Mongo open terminal and run ```mongod```
+1. To Run app server open terminal to Quest-Portal and run ```node app.js```
+1. To Run front-end application open terminal to Quest-Portal and run ```npm start```
 
 ## Tools/Frameworks/Modules Used for Application
 * Node.js
