@@ -17,7 +17,7 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 5.
 6. Install App Routing
 ```ng generate module app-routing --flat --module=app```
-1.
+1. If you get an error about rxjs download this version ```"rxjs": "^5.6.0-forward-compat.4",```
 1.
 1.
 1.
