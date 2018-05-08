@@ -26,6 +26,25 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 1.
 1.
 
+## Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Crimson+Text|Lato|Nanum+Brush+Script|Open+Sans|Oswald|Playfair+Display|Questrial|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Tangerine');
+
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Questrial', sans-serif;
+
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
