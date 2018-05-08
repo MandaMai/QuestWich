@@ -17,14 +17,8 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 5.
 6. Install App Routing
 ```ng generate module app-routing --flat --module=app```
-1. If you get an error about rxjs download this version ```"rxjs": "^5.6.0-forward-compat.4",```
-1.
-1.
-1.
-1.
-1.
-1.
-1.
+7. If you get an error about rxjs download this version ```"rxjs": "^5.6.0-forward-compat.4",```
+
 
 ## Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Crimson+Text|Lato|Nanum+Brush+Script|Open+Sans|Oswald|Playfair+Display|Questrial|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Tangerine');
@@ -55,8 +49,8 @@ Give examples
 
 ## Starting the Application
 1. To Run Mongo open terminal and run ```mongod```
-1. To Run app server open terminal to Quest-Portal and run ```node app.js```
-1. To Run front-end application open terminal to Quest-Portal and run ```npm start```
+2. To Run app server open terminal to Quest-Portal and run ```node app.js```
+3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
 
 ## Tools/Frameworks/Modules Used for Application
 * Node.js
