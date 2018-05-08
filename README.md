@@ -79,7 +79,7 @@ https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongod
 
 # Quest-Wich
 ## Running the Application
-1.
+1. Run Application ```npm start```
 1.
 1.
 1.
