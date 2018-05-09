@@ -13,7 +13,7 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 ```
 3. Install [Yarn](https://yarnpkg.com/en/docs/install#windows-stable) if needed
 4. Install bootstrap to application
-```yarn add bootstrap ngx-bootstrap```
+```yarn add bootstrap ngx-bootstrap```<br />
 :pencil2: If you get an error with rxjs download this version (I definitely did)  ```"rxjs": "^5.6.0-forward-compat.4",``` and change import statement to look at 'rxjs'.
 
 ## :circus_tent: Starting the Application
