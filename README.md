@@ -17,9 +17,12 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 :pencil2: If you get an error with rxjs download this version (I definitely did)  ```"rxjs": "^5.6.0-forward-compat.4",``` and change import statement to look at 'rxjs'.
 
 ## :circus_tent: Starting the Application
+### Terminal
 1. To Run Mongo open terminal and run ```mongod```
-2. To Run app server open terminal to Quest-Portal and run ```node app.js```
+2. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
+### Internet Browser 
+4. Open internet browser and go to [localhost:4200](localhost:4200)
 
 ## :gem: Versioning
 
