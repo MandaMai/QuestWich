@@ -26,7 +26,7 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## :trophy: References and Tutorials Used
-:link: [Creating a Blogging App Using Angular & MongoDB](https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-login--cms-30125)
+:link: [Creating a Blogging App Using Angular & MongoDB](https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-login--cms-30125)<br />
 :link: [Adding Sass to Project](https://scotch.io/tutorials/using-sass-with-the-angular-cli)<br />
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 :link: [Angular Testing](https://angular.io/guide/testing)<br />
