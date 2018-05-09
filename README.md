@@ -60,6 +60,7 @@ Give examples
 * Express.js
 * Mongoose.js
 * IDE or Text Editor (I used Visual Studio Code)
+* [FontAwesome](https://fontawesome.com/)
 
 ## Versioning
 
