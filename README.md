@@ -1,7 +1,7 @@
-# :flags: QuestWich
+# :flags: QuestWich  :circus_tent:
 One Paragraph of project description goes here<br />
 
-## :circus_tent: Creating the Application
+## :cd: Creating the Application
 1. Create new application
 ```ng new Quest-Portal --style=scss```
 2. Install and Update Additional Packages from Node
@@ -11,45 +11,17 @@ ng update @angular/core
 npm install jquery popper.js --save
 npm install --save express mongoose express body-parser morgan serve-favicon hoek rxjs
 ```
-3. Install [Yarn](https://yarnpkg.com/en/docs/install#windows-stable)
+3. Install [Yarn](https://yarnpkg.com/en/docs/install#windows-stable) if needed
 4. Install bootstrap to application
 ```yarn add bootstrap ngx-bootstrap```
 :pencil2: If you get an error with rxjs download this version (I definitely did)  ```"rxjs": "^5.6.0-forward-compat.4",``` and change import statement to look at 'rxjs'.
 
-
-## Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Crimson+Text|Lato|Nanum+Brush+Script|Open+Sans|Oswald|Playfair+Display|Questrial|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Tangerine');
-
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Crimson Text', serif;
-font-family: 'Amatic SC', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Nanum Brush Script', cursive;
-font-family: 'Questrial', sans-serif;
-
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-## :circus_tent: tarting the Application
+## :circus_tent: Starting the Application
 1. To Run Mongo open terminal and run ```mongod```
 2. To Run app server open terminal to Quest-Portal and run ```node app.js```
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
 
-## :wrench: ools/Frameworks/Modules Used for Application
+## :wrench: Tools/Frameworks/Modules Used for Application
 * Node.js
 * Angular CLI
 * Angular 5
@@ -69,20 +41,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 :link: [Angular Testing](https://angular.io/guide/testing)<br />
 
-## :sparkler: Running the Application
-1. Start MongoDB
-```mongod```
-2. Start Node Server
-```node server.js```
-3. Start Angular Application
-```ng serve```
-4. Have a fourth bash open for Git (if choosing to upload code to github that way)
-
-### File Structure for Project
-#### Quest-Portal
-#### User-Portal
-### :octocat: Pushing Changes to Git
-####  :computer: Through Commandline
+## :octocat: Pushing Changes to Git
+###  :computer: Through Commandline
 1. Go to application folder (Quest-Portal)
 2. Pull any existing changes
 ```git pull```
@@ -98,7 +58,7 @@ git commit -m "basic note for what was changed"
 ```git push```
 7. You may be prompted to log into Git in order for changes to be accepted successfully
 
-#### :crystal_ball: Through Visual Studio Code
+### :crystal_ball: Through Visual Studio Code
 1. Navigate to Source Control Tab (on right-hand side of application)
 1. Create New Branch in VS Code
 1. Make Code Changes
@@ -115,42 +75,12 @@ git commit -m "basic note for what was changed"
 1. Navigate back to VS Code to the Source Control Tab
 1. Click Three Dots (...) And Select Pull
 
-
-
-
-
-
-
-# These will all be needed after program is initially built
-For this is kept for documentation reference only. TO BE UPDATED
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-
-### :cd: Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-
-```
-Give the example
-```
-
-to clean the install periodically
-And repeat until builds correctly (no errors)
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+## Using the Application -> When Done
+These instructions will give you an idea about how the application works and how to use it.  
+### Data Diagram
+### Use Diagram
 
 ## :running: Running the tests
-
 Explain how to run the automated tests for this system
 
 ### :page_with_curl: Break down into end to end tests
@@ -168,27 +98,39 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-
 ## :hammer: Built With
 
-:link: [Node.js](https://nodejs.org/) - The web framework used
-:link: [Karma](http://karma-runner.github.io/2.0/index.html)<br />
-:link: [Jasmine](https://jasmine.github.io/1.3/introduction.html)<br />
-:link: [Yarn](https://yarnpkg.com/en/)<br />
-:link: [Visual Studio Code](https://code.visualstudio.com)<br />
-:link: [Angular CLI](https://cli.angular.io) - The web framework used
-:link: [Angular 6](https://angular.io) - The web framework used
-:link: [MongoDB](https://docs.mongodb.com/manual/installation/) - The web framework used
-:link: [Express.js](https://expressjs.com/) - The web framework used
-:link: [Mongoose.js](mongoosejs.com/) - The web framework used
-:link: [GoogleFonts](https://fonts.google.com/) - Web fonts to use on site
-:link: [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Basic App style prior to SCSS tinkering
-:link: [FontAwesome](https://fontawesome.com/get-started) - Used to generate icons
+:link: [Node.js](https://nodejs.org/) - The web framework used<br />
+:link: [Karma](http://karma-runner.github.io/2.0/index.html) - Used for Testing Angular Application<br />
+:link: [Jasmine](https://jasmine.github.io/1.3/introduction.html) - Used for Testing Angular Application<br />
+:link: [Yarn](https://yarnpkg.com/en/) - Used to install bootstrap<br />
+:link: [Visual Studio Code](https://code.visualstudio.com) - Used for all coding for this application<br />
+:link: [Angular CLI](https://cli.angular.io) - Used to create new application <br />
+:link: [Angular 6](https://angular.io) - The basic framework used for the application<br />
+:link: [MongoDB](https://docs.mongodb.com/manual/installation/) - The databased used for back end of application<br />
+:link: [Express.js](https://expressjs.com/) - Need more info but used for data/api manipulation<br />
+:link: [Mongoose.js](mongoosejs.com/) - I believe this was used for data schemas and data/api manipulation<br />
+:link: [GoogleFonts](https://fonts.google.com/) - Web fonts to use on site<br />
+:link: [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Basic App style prior to SCSS tinkering<br />
+:link: [FontAwesome](https://fontawesome.com/get-started) - Used to generate icons<br />
+
+## :clapper: Google Fonts Possibly Used
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Crimson+Text|Lato|Nanum+Brush+Script|Open+Sans|Oswald|Playfair+Display|Questrial|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Tangerine');
+
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Questrial', sans-serif;
 
 ## :notebook: Contributing
 
