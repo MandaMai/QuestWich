@@ -17,7 +17,6 @@ export class HomeComponent {
       this.router.navigate(['/']);
     } else {
       this.currentUser = localStorage.getItem('loggedInUser');
-      console.log(this.currentUser);
     }
 
     this.commonService.postEdit_Observable.subscribe(res => {
