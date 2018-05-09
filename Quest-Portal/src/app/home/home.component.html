@@ -6,12 +6,12 @@
                       Home
                     </button>
                 </li>
-                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                <button #addPost type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
                         Add
                       </button>
                 <li class="nav-item">
-                     <button type="button" class="btn btn-link">
-                      Logout
+                     <button (click)="logout()" type="button" class="btn btn-link">
+                      Logout of {{currentUser}}                     
                     </button>
                 </li>
             </ul>
