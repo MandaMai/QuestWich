@@ -21,16 +21,6 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 2. To Run app server open terminal to Quest-Portal and run ```node app.js```
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
 
-## :wrench: Tools/Frameworks/Modules Used for Application
-* Node.js
-* Angular CLI
-* Angular 5
-* MongoDB
-* Express.js
-* Mongoose.js
-* IDE or Text Editor (I used Visual Studio Code)
-* [FontAwesome](https://fontawesome.com/)
-
 ## :gem: Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
