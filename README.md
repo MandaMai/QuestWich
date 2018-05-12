@@ -1,5 +1,6 @@
 # :flags: QuestWich  :circus_tent:
 One Paragraph of project description goes here<br />
+Test application for logging awesomeness and areas of improvement
 
 ## :cd: Creating the Application
 1. Create new application
