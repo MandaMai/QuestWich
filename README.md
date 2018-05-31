@@ -25,10 +25,17 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 4. Use Homebrew to install/update Mongo to computer
 
 ## :circus_tent: Starting the Application
-### Terminal
+### Terminal - Windows
 1. To Run Mongo open terminal and run ```mongod```
 2. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
+
+### Terminal - Mac
+1. To Run Mongo open terminal and run ```brew services start Mongo```
+2. To Listen using Mongo open terminal and run ```mongo --host 127.0.0.:270107``` <-- may not need this
+3. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
+4. To Run front-end application open terminal to Quest-Portal and run ```npm start ```
+
 ### Internet Browser 
 4. Open internet browser and go to [localhost:4200](localhost:4200)
 
@@ -99,6 +106,14 @@ Explain what these tests test and why
 ```
 Give an example
 ```
+### Mongo Notes
+* Start Mongo ```brew services start mongodb```
+* Access Shell ```mongo```
+* Shut Down Mongo ```brew services stop mongodb```
+* Restart Mongo ```brew services restart mongodb```
+* More Options ```brew info mongodb```
+:link: [Provided by Stack Overflow](https://stackoverflow.com/questions/18452023/installing-and-running-mongodb-on-osx)<br />
+
 ## :hammer: Built With
 
 :link: [Node.js](https://nodejs.org/) - The web framework used<br />
