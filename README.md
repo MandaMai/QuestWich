@@ -24,6 +24,14 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 3. Ensure XCode is installed.
 4. Use Homebrew to install/update Mongo to computer
 
+### Mac and Windows -> Add a User to Use Application
+1. Open Mongo shell
+2. Go into QuestWich database ```use Questwich```
+3. Verify no users exist ```db.user.count()```
+4. Insert user ```db.user.insert({username: "email", password: "password", name: "name"})```
+5. Verify added user ```db.user.count()```
+6. Try logging into application
+
 ## :circus_tent: Starting the Application
 ### Terminal - Windows
 1. To Run Mongo open terminal and run ```mongod```
