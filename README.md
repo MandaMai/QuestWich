@@ -3,6 +3,7 @@ One Paragraph of project description goes here<br />
 Test application for logging awesomeness and areas of improvement
 
 ## :cd: Creating the Application
+### Windows Instructions
 1. Create new application
 ```ng new Quest-Portal --style=scss```
 2. Install and Update Additional Packages from Node
@@ -16,6 +17,12 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 4. Install bootstrap to application
 ```yarn add bootstrap ngx-bootstrap```<br /><br />
 :pencil2: If you get an error with rxjs download this version (I definitely did)  ```"rxjs": "^5.6.0-forward-compat.4",``` and change import statement to look at 'rxjs'.
+
+### MAC Instructions
+1. Save file to computer
+2. Run ng and npm commands above in project directory
+3. Ensure XCode is installed.
+4. Use Homebrew to install/update Mongo to computer
 
 ## :circus_tent: Starting the Application
 ### Terminal
