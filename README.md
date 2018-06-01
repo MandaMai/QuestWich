@@ -3,6 +3,7 @@ One Paragraph of project description goes here<br />
 Test application for logging awesomeness and areas of improvement
 
 ## :cd: Creating the Application
+### Windows Instructions
 1. Create new application
 ```ng new Quest-Portal --style=scss```
 2. Install and Update Additional Packages from Node
@@ -17,11 +18,32 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 ```yarn add bootstrap ngx-bootstrap```<br /><br />
 :pencil2: If you get an error with rxjs download this version (I definitely did)  ```"rxjs": "^5.6.0-forward-compat.4",``` and change import statement to look at 'rxjs'.
 
+### MAC Instructions
+1. Save file to computer
+2. Run ng and npm commands above in project directory
+3. Ensure XCode is installed.
+4. Use Homebrew to install/update Mongo to computer
+
+### Mac and Windows -> Add a User to Use Application
+1. Open Mongo shell
+2. Go into QuestWich database ```use Questwich```
+3. Verify no users exist ```db.user.count()```
+4. Insert user ```db.user.insert({username: "email", password: "password", name: "name"})```
+5. Verify added user ```db.user.count()```
+6. Try logging into application
+
 ## :circus_tent: Starting the Application
-### Terminal
+### Terminal - Windows
 1. To Run Mongo open terminal and run ```mongod```
 2. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
+
+### Terminal - Mac
+1. To Run Mongo open terminal and run ```brew services start Mongo```
+2. To Listen using Mongo open terminal and run ```mongo --host 127.0.0.:270107``` <-- may not need this
+3. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
+4. To Run front-end application open terminal to Quest-Portal and run ```npm start ```
+
 ### Internet Browser 
 4. Open internet browser and go to [localhost:4200](localhost:4200)
 
@@ -92,6 +114,14 @@ Explain what these tests test and why
 ```
 Give an example
 ```
+### Mongo Notes
+* Start Mongo ```brew services start mongodb```
+* Access Shell ```mongo```
+* Shut Down Mongo ```brew services stop mongodb```
+* Restart Mongo ```brew services restart mongodb```
+* More Options ```brew info mongodb```
+:link: [Provided by Stack Overflow](https://stackoverflow.com/questions/18452023/installing-and-running-mongodb-on-osx)<br />
+
 ## :hammer: Built With
 
 :link: [Node.js](https://nodejs.org/) - The web framework used<br />
