@@ -1,0 +1,91 @@
+[class*="fontItem"] {
+    border: 0.5rem outset #41848F;
+    margin: 10px;
+    padding: 32px;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    background-color: #F6F5F0;
+    color: #192B33;
+}
+[class*="colorItem"] {
+    border: 0.5rem outset #F6F5F0;
+    margin: 10px;
+    padding: 32px;
+    height: 180px;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    background-color: #F6F5F0;
+    color: #192B33;
+}
+h1 {
+    margin-top: 20px;
+}
+.fontItem1 { /*Font for Blogs*/
+    font-family: 'Amatic SC';
+}
+.fontItem2 { /*Font for Main Site*/
+    font-family: 'Crimson Text';
+}
+
+.gap {
+    background-color: white;
+    height: 50px;
+}
+p { 
+    margin-bottom: 0px;
+}
+
+
+.colorItem1 {
+    color: #F6F5F0;
+    background-color: #41848F;
+}
+.colorItem2 {
+    color: #F6F5F0;
+    background-color: #72A7A3;
+}
+.colorItem3 {
+    color: #192B33;
+    background-color: #97C0B7;
+}
+.colorItem4 {
+    color: #41848F;
+    /* background-color: #EEE9D1;*/
+    /* background-color: #F7F6F7; */
+    background-color: #F6F5F0;
+}
+.colorItem5 {
+    color: #F6F5F0;
+    background-color: #192B33;
+}
+.colorItem6{
+    color: white;
+    background-color: #33697F;
+}
+.colorItem7 {
+    color: white;
+    background-color: #402826;
+}
+.colorItem8 {
+    color: white;
+    background-color: #5A5E26;
+}
+.colorItem9 {
+    color: white;
+    background-color: #787D39;
+}
+.colorItem10 {
+    color: white;
+    background-color: #4C707F;
+}
+.colorItem11 {
+    color: white;
+    background-color: #403630;
+}
+.row {
+    margin: 20px;
+    margin-bottom: 20px;
+}
