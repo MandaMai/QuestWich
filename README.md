@@ -180,3 +180,25 @@ Huge shout out as this was by far the best tutorial and easiest to follow that I
 
 ## Image Resources
 * [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams
+
+## Font Resources
+* [Google Fonts]() 
+* [Amatic SC](https://fonts.google.com/specimen/Amatic+SC) - Handwriting
+* [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?selection.family=Crimson+Text) - Most Site Content
+
+## Color Palette
+### Main Site Colors
+* #41848F
+* #72A7A3
+* #97C0B7
+* #F6F5F0
+* #192B33
+### Backup Colors
+* #33697F
+* #402826
+* #5A5E26
+* #787D39
+* #4C707F
+* #403630
+
+
