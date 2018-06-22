@@ -171,6 +171,8 @@ Huge shout out as this was by far the best tutorial and easiest to follow that I
 
 ## :camera: Image Resources
 * [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams
+* [Sandwich vector](https://www.vecteezy.com)
+```<a target="_blank" href="https://www.vecteezy.com">Vector Graphics by www.vecteezy.com</a>```
 
 ## :shipit: Color Palette
 ### :heavy_check_mark: Main Site Colors
