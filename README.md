@@ -114,13 +114,16 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-### Mongo Notes
+## :notes: Mongo Notes
 * Start Mongo ```brew services start mongodb```
 * Access Shell ```mongo```
 * Shut Down Mongo ```brew services stop mongodb```
 * Restart Mongo ```brew services restart mongodb```
 * More Options ```brew info mongodb```
 :link: [Provided by Stack Overflow](https://stackoverflow.com/questions/18452023/installing-and-running-mongodb-on-osx)<br />
+
+## :notes: Helpful Commands and Notes
+* Generate new components to project ```ng generate component [componentName]```
 
 ## :hammer: Built With
 
