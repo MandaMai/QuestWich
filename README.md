@@ -124,7 +124,7 @@ Give an example
 
 ## :notes: Helpful Commands and Notes
 * Generate new components to project ```ng generate component [componentName]```
-
+* [Github emojis](https://gist.github.com/rxaviers/7360908)
 ## :hammer: Built With
 
 :link: [Node.js](https://nodejs.org/) - The web framework used<br />
@@ -142,22 +142,13 @@ Give an example
 :link: [FontAwesome](https://fontawesome.com/get-started) - Used to generate icons<br />
 
 ## :clapper: Google Fonts Possibly Used
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Crimson+Text|Lato|Nanum+Brush+Script|Open+Sans|Oswald|Playfair+Display|Questrial|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|);
 
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Lato', sans-serif;
 font-family: 'Crimson Text', serif;
 font-family: 'Amatic SC', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Nanum Brush Script', cursive;
-font-family: 'Questrial', sans-serif;
+
+* [Amatic SC](https://fonts.google.com/specimen/Amatic+SC) - Handwriting
+* [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?selection.family=Crimson+Text) - Most Site Content
 
 ## :notebook: Contributing
 
@@ -178,22 +169,17 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-login--cms-30125<br />
 Huge shout out as this was by far the best tutorial and easiest to follow that I have encountered learning Angular so far.
 
-## Image Resources
+## :camera: Image Resources
 * [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams
 
-## Font Resources
-* [Google Fonts]() 
-* [Amatic SC](https://fonts.google.com/specimen/Amatic+SC) - Handwriting
-* [Crimson Text](https://fonts.google.com/specimen/Crimson+Text?selection.family=Crimson+Text) - Most Site Content
-
-## Color Palette
-### Main Site Colors
+## :shipit: Color Palette
+### :heavy_check_mark: Main Site Colors
 * #41848F
 * #72A7A3
 * #97C0B7
 * #F6F5F0
 * #192B33
-### Backup Colors
+### :heavy_check_mark: Backup Colors
 * #33697F
 * #402826
 * #5A5E26
