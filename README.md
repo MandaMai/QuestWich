@@ -178,3 +178,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-login--cms-30125<br />
 Huge shout out as this was by far the best tutorial and easiest to follow that I have encountered learning Angular so far.
 
+## Image Resources
+* [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams
