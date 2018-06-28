@@ -51,6 +51,8 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
+## :shipit: Style Definitions
+:link: [Article on Stylesheet importance](https://designmodo.com/create-style-guides/)<br />
 ## :trophy: References and Tutorials Used
 :link: [Creating a Blogging App Using Angular & MongoDB](https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-login--cms-30125)<br />
 :link: [Adding Sass to Project](https://scotch.io/tutorials/using-sass-with-the-angular-cli)<br />
