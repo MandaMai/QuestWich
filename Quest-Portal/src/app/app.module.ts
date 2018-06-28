@@ -11,6 +11,8 @@ import { ShowPostComponent } from './show-post/show-post.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { CommonService } from './services/common.service';
 import { TestingComponent } from './testing/testing.component';
+import { QuestDashboardComponent } from './quest-dashboard/quest-dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { TestingComponent } from './testing/testing.component';
     HomeComponent,
     ShowPostComponent,
     AddPostComponent,
-    TestingComponent
+    TestingComponent,
+    QuestDashboardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
