@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const User = require('./model/user');
 const Post = require('./model/post');
+const Quest = require('./model/quest');
 
 const app = express()
 app.use(bodyParser.json());
@@ -91,5 +92,65 @@ app.post('/api/post/deletePost', (req, res) => {
         })
     });
 })
- 
+
+app.post('/api/post/getAllQuest', (req, res) => {
+    mongoose.connect(url, function(err){
+        if(err) throw err;
+        Post.find({},[],{ sort: { _id: -1 } },(err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/post/createQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        const post = new Post({
+            title: req.body.title,
+            description: req.body.description
+        })
+        post.save((err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/post/updateQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        Post.update(
+            {_id: req.body.id },
+            { title : req.body.title, description: req.body.description },
+            (err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/post/deleteQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        Post.findByIdAndRemove(req.body.id,
+            (err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
 app.listen(3000, () => console.log('blog server running on port 3000!'))
