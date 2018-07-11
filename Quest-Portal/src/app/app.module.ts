@@ -13,6 +13,8 @@ import { CommonService } from './services/common.service';
 import { TestingComponent } from './testing/testing.component';
 import { QuestDashboardComponent } from './quest-dashboard/quest-dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ShowQuestComponent } from './show-quest/show-quest.component';
+import { AddQuestComponent } from './add-quest/add-quest.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ProfileComponent } from './profile/profile.component';
     AddPostComponent,
     TestingComponent,
     QuestDashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    ShowQuestComponent,
+    AddQuestComponent
   ],
   imports: [
     BrowserModule,

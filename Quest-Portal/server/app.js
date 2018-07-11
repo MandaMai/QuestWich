@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const User = require('./model/user');
 const Post = require('./model/post');
+const Quest = require('./model/quest');
 
 const app = express()
 app.use(bodyParser.json());
@@ -91,5 +92,80 @@ app.post('/api/post/deletePost', (req, res) => {
         })
     });
 })
- 
+
+app.post('/api/quest/getAllQuest', (req, res) => {
+    mongoose.connect(url, function(err){
+        if(err) throw err;
+        Quest.find({},[],{ sort: { _id: -1 } },(err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/quest/createQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        const quest = new Quest({
+            name: req.body.name,
+            description: req.body.description,
+            progress: req.body.progress,
+            icon: req.body.icon,
+            endGoalDate: req.body.endGoalDate,
+            startDate: req.body.startDate,
+            endDate: req.body.endDate,
+            totalCampaign: req.body.totalCampaign
+        })
+        quest.save((err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/quest/updateQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        Quest.update(
+            {_id: req.body.id },
+            { 
+                name: req.body.name,
+                description: req.body.description,
+                progress: req.body.progress,
+                icon: req.body.icon,
+                endGoalDate: req.body.endGoalDate,
+                startDate: req.body.startDate,
+                endDate: req.body.endDate,
+                totalCampaign: req.body.totalCampaign
+             },
+            (err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/quest/deleteQuest', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) throw err;
+        Quest.findByIdAndRemove(req.body.id,
+            (err, doc) => {
+            if(err) throw err;
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
 app.listen(3000, () => console.log('blog server running on port 3000!'))

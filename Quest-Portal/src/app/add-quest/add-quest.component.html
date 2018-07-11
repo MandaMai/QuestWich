@@ -1,0 +1,50 @@
+<h1>Test Add Quest</h1>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Adding a Quest</h5>
+              <button type="button" #closeBtn class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+
+
+              <form>
+                  <div class="form-group">
+                      <label for="exampleQuest1">Name</label>
+                      <input name="name" type="text" [(ngModel)]="quest.name" class="form-control" id="exampleQuest1" aria-describedby="emailHelp" placeholder="Enter Quest">
+
+                      <label for="exampleQuestDesc1">Description</label>
+                      <textarea name="description" [(ngModel)]="quest.description" class="form-control" id="exampleQuestDesc1" placeholder="Description"></textarea>
+
+                      <label for="exampleIcon">Icon Url</label>
+                      <input type="text" name="iconUrl" [(ngModel)]="quest.icon" class="form-control" id="exampleIcon1" aria-describedby="iconUrl" placeholder="Enter icon url">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="questProgress">Progress for Quest</label>
+                    <input type="number" name="progress" [(ngModel)]="quest.progress" class="form-control" id="exampleProgress" aria-describedby="progress" placeholder="Enter Progress for Quest">
+
+                    <label for="questEndGoalDate">End Goal Date for Quest</label>
+                    <input type="date" name="endGoalDate" [(ngModel)]="quest.endGoalDate" class="form-control" id="exampleEndGoalDate" aria-describedby="endgoalDate" placeholder="Enter End Goal Date for Quest">
+
+                    <label for="questStartDate">Start Date for Quest</label>
+                    <input type="date" name="startDate" [(ngModel)]="quest.startDate" class="form-control" id="exampleStartDate" aria-describedby="startDate" placeholder="Enter Start Date for Quest">
+
+                    <label for="questEndDate">End Date for Quest</label>
+                    <input type="date" name="endDate" [(ngModel)]="quest.endDate" class="form-control" id="exampleEndDate" aria-describedby="endDate" placeholder="Enter End Date for Quest">
+
+                    <label for="questTotalCampaign">Total Campaign for Quest</label>
+                    <input type="number" name="totalCampaign" [(ngModel)]="quest.totalCampaign" class="form-control" id="exampleTotalCampaign" aria-describedby="totalCampaign" placeholder="Enter Total Campaign for Quest">
+                  </div>
+
+                  <button (click)="addQuest()" type="button" class="btn btn-primary">Add</button>
+              </form>
+
+
+          </div>
+      </div>
+  </div>
+</div>
