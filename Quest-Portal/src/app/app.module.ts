@@ -14,6 +14,7 @@ import { TestingComponent } from './testing/testing.component';
 import { QuestDashboardComponent } from './quest-dashboard/quest-dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ShowQuestComponent } from './show-quest/show-quest.component';
+import { AddQuestComponent } from './add-quest/add-quest.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ShowQuestComponent } from './show-quest/show-quest.component';
     TestingComponent,
     QuestDashboardComponent,
     ProfileComponent,
-    ShowQuestComponent
+    ShowQuestComponent,
+    AddQuestComponent
   ],
   imports: [
     BrowserModule,

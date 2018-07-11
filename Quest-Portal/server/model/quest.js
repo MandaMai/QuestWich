@@ -9,7 +9,7 @@ const questSchema = new Schema({
   description: {type: String, required: true},
   endGoalDate: {type: Date},
   startDate: {type: Date, required: true},
-  endDate: {type: Date, required: true},
+  endDate: {type: Date, },
   totalCampaign: {type: Number, min: 0}
 }, { collection : 'quest' });
  

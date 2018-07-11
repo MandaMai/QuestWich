@@ -8,17 +8,29 @@ export class AddQuestService {
   constructor(private http: HttpClient) { }
 
   addQuest(quest: Quest) {
-    return this.http.post('/api/post/createQuest', {
-        title : quest.name,
-        description : quest.description
+    return this.http.post('/api/quest/createQuest', {
+        name : quest.name,
+        description : quest.description,
+        progress: quest.progress,
+        icon: quest.icon,
+        endGoalDate: quest.endGoalDate,
+        startDate: quest.startDate,
+        endDate: quest.endDate,
+        totalCampaign: quest.totalCampaign
     });
 }
 
-updatePost(quest: Quest) {
-    return this.http.post('/api/post/updatePost', {
+updateQuest(quest: Quest) {
+    return this.http.post('/api/quest/updateQuest', {
         id: quest._id,
-        title : quest.name,
-        description : quest.description
+        name : quest.name,
+        description : quest.description,
+        progress: quest.progress,
+        icon: quest.icon,
+        endGoalDate: quest.endGoalDate,
+        startDate: quest.startDate,
+        endDate: quest.endDate,
+        totalCampaign: quest.totalCampaign
     });
 }
 

@@ -93,10 +93,10 @@ app.post('/api/post/deletePost', (req, res) => {
     });
 })
 
-app.post('/api/post/getAllQuest', (req, res) => {
+app.post('/api/quest/getAllQuest', (req, res) => {
     mongoose.connect(url, function(err){
         if(err) throw err;
-        Post.find({},[],{ sort: { _id: -1 } },(err, doc) => {
+        Quest.find({},[],{ sort: { _id: -1 } },(err, doc) => {
             if(err) throw err;
             return res.status(200).json({
                 status: 'success',
@@ -106,14 +106,20 @@ app.post('/api/post/getAllQuest', (req, res) => {
     });
 })
 
-app.post('/api/post/createQuest', (req, res) => {
+app.post('/api/quest/createQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
         if(err) throw err;
-        const post = new Post({
-            title: req.body.title,
-            description: req.body.description
+        const quest = new Quest({
+            name: req.body.name,
+            description: req.body.description,
+            progress: req.body.progress,
+            icon: req.body.icon,
+            endGoalDate: req.body.endGoalDate,
+            startDate: req.body.startDate,
+            endDate: req.body.endDate,
+            totalCampaign: req.body.totalCampaign
         })
-        post.save((err, doc) => {
+        quest.save((err, doc) => {
             if(err) throw err;
             return res.status(200).json({
                 status: 'success',
@@ -123,12 +129,21 @@ app.post('/api/post/createQuest', (req, res) => {
     });
 })
 
-app.post('/api/post/updateQuest', (req, res) => {
+app.post('/api/quest/updateQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
         if(err) throw err;
-        Post.update(
+        Quest.update(
             {_id: req.body.id },
-            { title : req.body.title, description: req.body.description },
+            { 
+                name: req.body.name,
+                description: req.body.description,
+                progress: req.body.progress,
+                icon: req.body.icon,
+                endGoalDate: req.body.endGoalDate,
+                startDate: req.body.startDate,
+                endDate: req.body.endDate,
+                totalCampaign: req.body.totalCampaign
+             },
             (err, doc) => {
             if(err) throw err;
             return res.status(200).json({
@@ -139,10 +154,10 @@ app.post('/api/post/updateQuest', (req, res) => {
     });
 })
 
-app.post('/api/post/deleteQuest', (req, res) => {
+app.post('/api/quest/deleteQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
         if(err) throw err;
-        Post.findByIdAndRemove(req.body.id,
+        Quest.findByIdAndRemove(req.body.id,
             (err, doc) => {
             if(err) throw err;
             return res.status(200).json({

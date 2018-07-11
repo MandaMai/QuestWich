@@ -8,6 +8,7 @@ constructor() {
     this.endDate = '';
     this.totalCampaign = 0;
     this.icon = '';
+    this.endGoalDate = '';
 }
 public _id;
 public name;

@@ -7,10 +7,10 @@ export class ShowQuestService {
   constructor(private http: HttpClient) { }
 
   getAllQuest() {
-    return this.http.post('/api/post/getAllQuest', {});
+    return this.http.post('/api/quest/getAllQuest', {});
   }
 
   deleteQuest(id) {
-    return this.http.post('/api/post/deleteQuest', {id: id});
+    return this.http.post('/api/quest/deleteQuest', {id: id});
   }
 }
