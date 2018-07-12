@@ -18,7 +18,7 @@ export class QuestDashboardComponent implements OnInit {
       this.currentUser = localStorage.getItem('loggedInUser');
     }
 
-    this.commonService.postEdit_Observable.subscribe(res => {
+    this.commonService.questEdit_Observable.subscribe(res => {
       this.addBtn.nativeElement.click();
     });
   }
