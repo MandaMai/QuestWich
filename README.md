@@ -148,7 +148,7 @@ Give an example
 ## Application Architecture/Structure
 ![Diagram for Application](https://github.com/MandaMai/QuestWich/blob/master/Quest-Portal/src/assets/imageFiles/QuestWichDiagram.png)<br />
 
-## :clapper: Google Fonts Possibly Used
+## :clapper: Google Fonts Used
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|);
 
 font-family: 'Crimson Text', serif;
