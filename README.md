@@ -117,12 +117,17 @@ Explain what these tests test and why
 Give an example
 ```
 ## :notes: Mongo Notes
+### General Notes
 * Start Mongo ```brew services start mongodb```
 * Access Shell ```mongo```
 * Shut Down Mongo ```brew services stop mongodb```
 * Restart Mongo ```brew services restart mongodb```
 * More Options ```brew info mongodb```
 :link: [Provided by Stack Overflow](https://stackoverflow.com/questions/18452023/installing-and-running-mongodb-on-osx)<br />
+
+### Mongo Commands
+:link: [CheatSheet from Open Tech Guides](https://www.opentechguides.com/how-to/article/mongodb/118/mongodb-cheatsheat.html)
+![CheatSheet from Open Tech Guides](https://www.opentechguides.com/how-to/article/mongodb/118/mongodb-cheatsheat.html)
 
 ## :notes: Helpful Commands and Notes
 * Generate new components to project ```ng generate component [componentName]```
