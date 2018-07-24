@@ -127,6 +127,7 @@ Give an example
 ## :notes: Helpful Commands and Notes
 * Generate new components to project ```ng generate component [componentName]```
 * [Github emojis](https://gist.github.com/rxaviers/7360908)
+
 ## :hammer: Built With
 
 :link: [Node.js](https://nodejs.org/) - The web framework used<br />
@@ -142,6 +143,10 @@ Give an example
 :link: [GoogleFonts](https://fonts.google.com/) - Web fonts to use on site<br />
 :link: [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Basic App style prior to SCSS tinkering<br />
 :link: [FontAwesome](https://fontawesome.com/get-started) - Used to generate icons<br />
+:link: [LucidChart](https://www.lucidchart.com/) - To create diagram for application<br />
+
+## Application Architecture/Structure
+![Diagram for Application](https://github.com/MandaMai/QuestWich/blob/master/Quest-Portal/src/assets/imageFiles/QuestWichDiagram.png)<br />
 
 ## :clapper: Google Fonts Possibly Used
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|);
