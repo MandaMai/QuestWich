@@ -58,6 +58,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 :link: [Adding Sass to Project](https://scotch.io/tutorials/using-sass-with-the-angular-cli)<br />
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 :link: [Angular Testing](https://angular.io/guide/testing)<br />
+:link: [Adding Dynamic Images](http://www.talkinghightech.com/en/angular-2-dynamic-urls-sanitizer/)<br />
 
 ## :octocat: Pushing Changes to Git
 ###  :computer: Through Commandline
