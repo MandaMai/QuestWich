@@ -181,11 +181,11 @@ https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongod
 Huge shout out as this was by far the best tutorial and easiest to follow that I have encountered learning Angular so far.
 
 ## :camera: Image Resources
-* [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams
-* [Sandwich from logo](https://www.freepik.com/free-photos-vectors/food) Food vector created by Dooder - Freepik.com
-
+* [Flag from logo](https://freedesignresources.net/vintage-vector-flags/) by Wiki Williams<br />
+* [Sandwich from logo](https://www.freepik.com/free-photos-vectors/food) Food vector created by Dooder - Freepik.com<br />
 * [Sandwich vector](https://www.vecteezy.com)
 ```<a target="_blank" href="https://www.vecteezy.com">Vector Graphics by www.vecteezy.com</a>```
+* [Temporary profile picture](http://marvel.wikia.com/wiki/Nomi_Blume_(Earth-1610))<br />
 
 ## :shipit: Color Palette
 ### :heavy_check_mark: Main Site Colors
