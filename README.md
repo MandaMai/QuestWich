@@ -127,7 +127,6 @@ Give an example
 
 ### Mongo Commands
 :link: [CheatSheet from Open Tech Guides](https://www.opentechguides.com/how-to/article/mongodb/118/mongodb-cheatsheat.html)
-![CheatSheet from Open Tech Guides](https://www.opentechguides.com/how-to/article/mongodb/118/mongodb-cheatsheat.html)
 
 ## :notes: Helpful Commands and Notes
 * Generate new components to project ```ng generate component [componentName]```
