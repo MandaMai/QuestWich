@@ -153,6 +153,9 @@ Give an example
 ## Application Architecture/Structure
 ![Diagram for Application](https://github.com/MandaMai/QuestWich/blob/master/Quest-Portal/src/assets/imageFiles/QuestWichDiagram.png)<br />
 
+### Changes from Diagram Above
+* User.nickname has changed to User.username
+
 ## :clapper: Google Fonts Used
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|);
 
