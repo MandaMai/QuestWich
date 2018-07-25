@@ -1,19 +1,24 @@
 <div class="list-group questList">
   <a *ngFor="let quest of quests" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-33 justify-content-between">
-          <h5 class="mb-1 blog-text">{{quest.name}}</h5>
-          <small>{{quest.progress/10*100}}%</small>
-      </div>
-      <p class="mb-1 blog-text">{{quest.description}}</p>
-
-      
-      <div class="d-flex w-100 justify-content-between">
-        <small data-target="getDays(quest)">{{quest.openDays}}</small>
-        <div>
-            <i (click)="editQuest(quest)" title="Edit" class="fas fa-edit" aria-hidden="true"></i>
-            <i (click)="setDelete(quest)" data-toggle="modal" data-target="#deleteModal" title="Delete" class="fas fa-trash-alt" aria-hidden="true"></i>
+      <div class="row">
+        <div class="col-3">
+          <img class="questImage" [src]=getSanitizeUrl(quest.icon) />
         </div>
-     </div>
+        <div class="col-9">
+            <div class="d-flex w-33 justify-content-between">
+                <h5 class="mb-1 blog-text">{{quest.name}}</h5>
+                <small>{{quest.progress/10*100}}%</small>
+            </div>
+            
+            <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 blog-text">{{quest.description}}</p>
+                <div>
+                    <i (click)="editQuest(quest)" title="Edit" class="fas fa-edit" aria-hidden="true"></i>
+                    <i (click)="setDelete(quest)" data-toggle="modal" data-target="#deleteModal" title="Delete" class="fas fa-trash-alt" aria-hidden="true"></i>
+                </div>
+             </div>
+        </div>
+      </div>
   </a>
 </div>
 

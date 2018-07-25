@@ -27,19 +27,19 @@
                     <input type="number" name="progress" [(ngModel)]="quest.progress" class="form-control" id="exampleProgress" aria-describedby="progress" placeholder="Enter Progress for Quest">
 
                     <label for="questEndGoalDate">End Goal Date for Quest</label>
-                    <input type="date" name="endGoalDate" [(ngModel)]="quest.endGoalDate" class="form-control" id="exampleEndGoalDate" aria-describedby="endgoalDate" placeholder="Enter End Goal Date for Quest">
+                    <input type="date" name="endGoalDate" [value]="quest.endGoalDate | date:'yyyy-MM-dd'" (input)="quest.endGoalDate=parseDate($event.target.value)" class="form-control" id="exampleEndGoalDate" aria-describedby="endGoalDate" placeholder="Enter End Goal Date for Quest">
 
                     <label for="questStartDate">Start Date for Quest</label>
-                    <input type="date" name="startDate" [(ngModel)]="quest.startDate" class="form-control" id="exampleStartDate" aria-describedby="startDate" placeholder="Enter Start Date for Quest">
+                    <input type="date" name="startDate" [value]="quest.startDate | date:'yyyy-MM-dd'" (input)="quest.startDate=parseDate($event.target.value)" class="form-control" id="exampleStartDate" aria-describedby="startDate" placeholder="Enter Start Date for Quest">
 
                     <label for="questEndDate">End Date for Quest</label>
-                    <input type="date" name="endDate" [(ngModel)]="quest.endDate" class="form-control" id="exampleEndDate" aria-describedby="endDate" placeholder="Enter End Date for Quest">
+                    <input type="date" name="endDate" [value]="quest.endDate | date:'yyyy-MM-dd'" (input)="quest.endDate=parseDate($event.target.value)" class="form-control" id="exampleEndDate" aria-describedby="endDate" placeholder="Enter End Date for Quest">
 
                     <label for="questTotalCampaign">Total Campaign for Quest</label>
                     <input type="number" name="totalCampaign" [(ngModel)]="quest.totalCampaign" class="form-control" id="exampleTotalCampaign" aria-describedby="totalCampaign" placeholder="Enter Total Campaign for Quest">
                   </div>
 
-                  <button (click)="addQuest()" type="button" class="btn btn-primary">Add</button>
+                  <button (click)="addQuest()" type="button" class="btn btn-primary">Save</button>
               </form>
 
 
