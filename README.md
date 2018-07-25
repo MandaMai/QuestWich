@@ -191,6 +191,7 @@ Huge shout out as this was by far the best tutorial and easiest to follow that I
 ```<a target="_blank" href="https://www.vecteezy.com">Vector Graphics by www.vecteezy.com</a>```
 * [Temporary profile picture](http://marvel.wikia.com/wiki/Nomi_Blume_(Earth-1610))<br />
 * [Quest Map](http://quartermaester.info/)<br />
+* [Quest Image](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)<br />
 
 ## :shipit: Color Palette
 ### :heavy_check_mark: Main Site Colors
