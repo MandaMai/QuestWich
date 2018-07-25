@@ -9,6 +9,7 @@ constructor() {
     this.totalCampaign = 0;
     this.icon = '';
     this.endGoalDate = '';
+    this.openDays = 0;
 }
 public _id;
 public name;
@@ -19,4 +20,5 @@ public endGoalDate;
 public startDate;
 public endDate;
 public totalCampaign;
+public openDays;
 }
