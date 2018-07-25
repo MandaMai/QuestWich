@@ -14,7 +14,7 @@ app.post('/api/user/login', (req, res) => {
     mongoose.connect(url, function(err){
         if(err) throw err;
         User.find({
-            username : req.body.username, password : req.body.password
+            email : req.body.email, password : req.body.password
         }, function(err, user){
             if(err) throw err;
             if(user.length === 1){  

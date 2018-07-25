@@ -27,7 +27,6 @@ export class AddQuestComponent implements OnInit {
   }
 
   addQuest() {
-    console.log('add Quest was started');
     if (this.quest.name && this.quest.description) {
       if (this.quest._id) {
         this.addQuestService.updateQuest(this.quest).subscribe(res => {
