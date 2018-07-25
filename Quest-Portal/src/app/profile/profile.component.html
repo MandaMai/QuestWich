@@ -1,3 +1,56 @@
-<p>
-  profile works!
-</p>
+<h1>Welcome Adventurer {{currentUser.username}}!</h1>
+
+<div class="row">
+    <div class="col-8">
+      <div class="personalInformation">
+        <h2>Your Personal Information</h2>
+        <div class="row">
+          <div class="col-4"><p>First Name: {{currentUser.firstName}}</p></div>
+          <div class="col-4"><p>Last Name: {{currentUser.lastName}}</p></div>
+          <div class="col-4"><p>Birthdate: {{currentUser.birthdate}}</p></div>
+        </div>
+        <p>Biography: {{currentUser.biography}}</p>
+      </div>
+
+      <div class="history">
+          <p>Date You Started Tracking Your Awesomeness: {{currentUser.createdDate}}</p>
+          <p>Your Last Update: {{currentUser.lastModifiedDate}}</p>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h3>Placeholder for Skills List</h3>
+        </div>
+        <div class="col-6">
+          <h3>Placeholder for Traits List</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="progressStats">
+      <h2>Your Progress</h2>
+      <h3>Your current status: {{currentUser.status}}</h3>
+      <h3>{{percentageCompleted}}</h3>
+      <div class="row">
+        <div class="col-6"><p>{{currentUser.totalProgressCompleted}} Points Completed!</p></div>
+        <div class="col-6"><p>{{currentUser.totalProgressPending}} Points to Go!</p></div>
+      </div>
+      </div>
+
+      <img class="profileImage" [src]=getSanitizeUrl(currentUser.picture) />
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+

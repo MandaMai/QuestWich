@@ -10,8 +10,23 @@ export class LoginService {
 
     validateLogin(user: User) {
         return this.http.post('/api/user/login', {
+            email: user.email,
+            password: user.password,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            birthdate: user.birthdate,
+            status: user.status,
             username: user.username,
-            password: user.password
+            biography: user.biography,
+            createdDate: user.createdDate,
+            closedDate: user.closedDate,
+            picture: user.picture,
+            totalProgressCompleted: user.totalProgressCompleted,
+            totalProgressPending: user.totalProgressPending,
+            skillListId: user.skillListId,
+            traitListId: user.traitListId,
+            lastModifiedDate: user.lastModifiedDate,
+            _id: user._id
         });
     }
 }

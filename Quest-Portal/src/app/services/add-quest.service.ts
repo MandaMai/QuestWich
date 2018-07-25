@@ -22,7 +22,7 @@ export class AddQuestService {
 
 updateQuest(quest: Quest) {
     return this.http.post('/api/quest/updateQuest', {
-        id: quest._id,
+        _id: quest._id,
         name : quest.name,
         description : quest.description,
         progress: quest.progress,

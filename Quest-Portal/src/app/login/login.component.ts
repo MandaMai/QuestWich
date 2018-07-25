@@ -18,12 +18,36 @@ export class LoginComponent {
    }
 
    validateLogin() {
-    if (this.user.username && this.user.password) {
+    if (this.user.email && this.user.password) {
         this.loginService.validateLogin(this.user).subscribe(result => {
       if (result['status'] === 'success') {
+        this.user = result['data'][0];
+        // TODO remove this when complete
+        console.log(this.user); // Testing what is coming back from login
+
+        // User data stored locally for profile page and various application displays
         localStorage.setItem('loggedInUser', this.user.username);
+        localStorage.setItem('userID', this.user._id);
+        localStorage.setItem('userEmail', this.user.email);
+        localStorage.setItem('userFirstName', this.user.firstName);
+        localStorage.setItem('userLastName', this.user.lastName);
+        localStorage.setItem('userBirthdate', this.user.birthdate);
+        localStorage.setItem('password', this.user.password);
+        localStorage.setItem('status', this.user.status);
+        localStorage.setItem('username', this.user.username);
+        localStorage.setItem('biography', this.user.biography);
+        localStorage.setItem('createdDate', this.user.createdDate);
+        localStorage.setItem('closedDate', this.user.closedDate);
+        localStorage.setItem('picture', this.user.picture);
+        localStorage.setItem('totalProgressCompleted', this.user.totalProgressCompleted);
+        localStorage.setItem('totalProgressPending', this.user.totalProgressPending);
+        localStorage.setItem('skillListId', this.user.skillListId);
+        localStorage.setItem('traitListId', this.user.traitListId);
+        localStorage.setItem('lastModifiedDate', this.user.lastModifiedDate);
+
         this.router.navigate(['/home']);
       } else {
+
         alert('Wrong username password');
       }
     }, error => {

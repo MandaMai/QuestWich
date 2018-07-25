@@ -13,7 +13,6 @@ export class RootComponent implements OnInit {
       this.router.navigate(['/']);
     } else {
       this.currentUser = localStorage.getItem('loggedInUser');
-      console.log(this.currentUser);
     }
   }
 
