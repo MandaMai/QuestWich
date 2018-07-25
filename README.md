@@ -28,7 +28,7 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 1. Open Mongo shell
 2. Go into QuestWich database ```use Questwich```
 3. Verify no users exist ```db.user.count()```
-4. Insert user ```db.user.insert({username: "email", password: "password", name: "name"})```
+4. Insert user ```db.user.insert({"username": "Manda", "password":"password", "firstName": "Amanda", "lastName":"Maifeld", "email":"a.maifeld@hotmail.com", "birthdate": "4/1/1986","status":"noob", "biography":"Testing out new app as user", "createdDate":"5/1/2018", "closedDate":"", "picture":"https://vignette.wikia.nocookie.net/marveldatabase/images/d/da/Nomi_Blume_%28Earth-1610%29_from_X-Men_Blue_Vol_1_5_001.jpg/revision/latest/scale-to-width-down/324?cb=20170617182306", "totalProgressCompleted":42, "totalProgressPending":100, "skillListID":"42", "traitListId":"42", "lastModifiedDate":"7/23/2018"})```
 5. Verify added user ```db.user.count()```
 6. Try logging into application
 
