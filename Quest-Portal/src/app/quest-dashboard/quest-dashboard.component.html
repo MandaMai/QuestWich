@@ -7,16 +7,21 @@
 
       </ul>
   </nav>
-  <h3 class="text-muted">Angular Quest App</h3>
+
 </header>
 
 <main role="main">
- 
-  <app-show-quest></app-show-quest>
-  <app-add-quest (questAdded)="handleQuestAdded()"></app-add-quest>
+  <div class="row">
+    <div class="col-7">
+        <h3 class="text-muted">Your Quest Map</h3>
+        <img class="map" src="../../assets/imageFiles/questMap_temp.png" alt="">
+    </div>
+    <div class="col-5">
+    <h3 class="text-muted">Your Quests</h3>
+    <app-show-quest></app-show-quest>
+    <app-add-quest (questAdded)="handleQuestAdded()"></app-add-quest>
+  </div>
+  </div>
 </main>
 
-<p>
-  Map will go here on left side of screen (2/3)
-</p>
-<p> Right side will have open quests</p>
+
