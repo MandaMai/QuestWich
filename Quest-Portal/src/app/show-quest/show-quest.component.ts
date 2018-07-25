@@ -53,4 +53,11 @@ export class ShowQuestComponent implements OnInit {
       this.closeBtn.nativeElement.click();
     });
   }
+
+  getDays(quest: Quest) {
+    console.log('made it here');
+    const today = Date.now();
+    quest.openDays = 42;
+
+  }
 }

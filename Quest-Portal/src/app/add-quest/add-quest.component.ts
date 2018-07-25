@@ -14,6 +14,7 @@ export class AddQuestComponent implements OnInit {
 
   @ViewChild('closeBtn') closeBtn: ElementRef;
   public quest: Quest;
+  public modalName = 'Generate or Change a Quest';
 
   constructor(private addQuestService: AddQuestService, private router: Router, private commonService: CommonService) {
     this.quest = new Quest();

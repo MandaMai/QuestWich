@@ -2,7 +2,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Adding a Quest</h5>
+              <h5 class="modal-title" id="exampleModalLabel">{{modalName}}</h5>
               <button type="button" #closeBtn class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -12,7 +12,7 @@
 
               <form>
                   <div class="form-group">
-                      <label for="exampleQuest1">Name</label>
+                      <label for="exampleQuest1">Name of Your Quest</label>
                       <input name="name" type="text" [(ngModel)]="quest.name" class="form-control" id="exampleQuest1" aria-describedby="emailHelp" placeholder="Enter Quest">
 
                       <label for="exampleQuestDesc1">Description</label>
