@@ -43,7 +43,7 @@ export class ShowQuestComponent implements OnInit {
     this.quest_to_delete = quest;
   }
 
-  unsetDelete() { // user decides to cancel delete request
+  unsetDelete() {
     this.quest_to_delete = null;
   }
 
@@ -55,11 +55,10 @@ export class ShowQuestComponent implements OnInit {
     });
   }
 
+  // TODO need to get number of days since opening IF item is not closed
   getDays(quest: Quest) {
     console.log('made it here');
     const today = Date.now();
-    quest.openDays = 42;
-
   }
 
   public getSanitizeUrl( url: string ) {

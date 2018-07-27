@@ -3,6 +3,7 @@ import { Post } from '../models/post.model';
 import { Router } from '@angular/router';
 import { CommonService } from '../services/common.service';
 import { AddPostService } from '../services/add-post.service';
+import { FormGroup } from '../../../node_modules/@angular/forms';
 
 @Component({
   selector: 'app-add-post',
@@ -11,6 +12,7 @@ import { AddPostService } from '../services/add-post.service';
   providers: [ AddPostService ]
 })
 export class AddPostComponent implements OnInit {
+  public modalName = 'Add A Journal Post';
 
   @ViewChild('closeBtn') closeBtn: ElementRef;
   public post: Post;
@@ -23,6 +25,7 @@ export class AddPostComponent implements OnInit {
     this.commonService.postEdit_Observable.subscribe(res => {
       this.post = this.commonService.post_to_be_edited;
       console.log('post is ' , this.post._id);
+      this.modalName = 'Edit Your Journal Post';
     });
   }
 
