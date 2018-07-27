@@ -12,7 +12,7 @@ const url = 'mongodb://localhost/QuestWich';
 
 app.post('/api/user/login', (req, res) => {
     mongoose.connect(url, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to QuestWich Database at this time: " + err;
         User.find({
             email : req.body.email, password : req.body.password
         }, function(err, user){
@@ -23,7 +23,7 @@ app.post('/api/user/login', (req, res) => {
                     data: user
                 })
             } else {
-                return res.status(200).json({
+                return res.status(400).json({
                     status: 'fail',
                     message: 'Login Failed'
                 })
@@ -35,9 +35,14 @@ app.post('/api/user/login', (req, res) => {
 
 app.post('/api/post/getAllPost', (req, res) => {
     mongoose.connect(url, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Post Collection at this time: " + err;
         Post.find({},[],{ sort: { _id: -1 } },(err, doc) => {
-            if(err) throw err;
+            if(err) {
+                return releaseEvents.status(400).json({
+                    status: 'fail',
+                    data: doc
+                })
+            }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -48,13 +53,18 @@ app.post('/api/post/getAllPost', (req, res) => {
 
 app.post('/api/post/createPost', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Post Collection at this time: " + err;
         const post = new Post({
             title: req.body.title,
             description: req.body.description
         })
         post.save((err, doc) => {
-            if(err) throw err;
+            if(err) {
+                return releaseEvents.status(400).json({
+                    status: 'fail',
+                    data: doc
+                })
+            }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -65,12 +75,17 @@ app.post('/api/post/createPost', (req, res) => {
 
 app.post('/api/post/updatePost', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Post Collection at this time: " + err;
         Post.update(
             {_id: req.body.id },
             { title : req.body.title, description: req.body.description },
             (err, doc) => {
-            if(err) throw err;
+                if(err) {
+                    return releaseEvents.status(400).json({
+                        status: 'fail',
+                        data: doc
+                    })
+                }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -84,7 +99,12 @@ app.post('/api/post/deletePost', (req, res) => {
         if(err) throw err;
         Post.findByIdAndRemove(req.body.id,
             (err, doc) => {
-            if(err) throw err;
+                if(err) {
+                    return releaseEvents.status(400).json({
+                        status: 'fail',
+                        data: doc
+                    })
+                }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -95,9 +115,14 @@ app.post('/api/post/deletePost', (req, res) => {
 
 app.post('/api/quest/getAllQuest', (req, res) => {
     mongoose.connect(url, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
         Quest.find({},[],{ sort: { _id: -1 } },(err, doc) => {
-            if(err) throw err;
+            if(err) {
+                return releaseEvents.status(400).json({
+                    status: 'fail',
+                    data: doc
+                })
+            }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -108,7 +133,7 @@ app.post('/api/quest/getAllQuest', (req, res) => {
 
 app.post('/api/quest/createQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
         const quest = new Quest({
             name: req.body.name,
             description: req.body.description,
@@ -120,7 +145,12 @@ app.post('/api/quest/createQuest', (req, res) => {
             totalCampaign: req.body.totalCampaign
         })
         quest.save((err, doc) => {
-            if(err) throw err;
+            if(err) {
+                return releaseEvents.status(400).json({
+                    status: 'fail',
+                    data: doc
+                })
+            }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -131,7 +161,7 @@ app.post('/api/quest/createQuest', (req, res) => {
 
 app.post('/api/quest/updateQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
         Quest.update(
             {_id: req.body.id },
             { 
@@ -145,7 +175,12 @@ app.post('/api/quest/updateQuest', (req, res) => {
                 totalCampaign: req.body.totalCampaign
              },
             (err, doc) => {
-            if(err) throw err;
+                if(err) {
+                    return releaseEvents.status(400).json({
+                        status: 'fail',
+                        data: doc
+                    })
+                }
             return res.status(200).json({
                 status: 'success',
                 data: doc
@@ -156,10 +191,15 @@ app.post('/api/quest/updateQuest', (req, res) => {
 
 app.post('/api/quest/deleteQuest', (req, res) => {
     mongoose.connect(url, { useMongoClient: true }, function(err){
-        if(err) throw err;
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
         Quest.findByIdAndRemove(req.body.id,
             (err, doc) => {
-            if(err) throw err;
+                if(err) {
+                    return releaseEvents.status(400).json({
+                        status: 'fail',
+                        data: doc
+                    })
+                }
             return res.status(200).json({
                 status: 'success',
                 data: doc

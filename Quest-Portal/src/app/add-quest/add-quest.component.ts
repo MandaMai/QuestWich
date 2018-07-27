@@ -14,7 +14,7 @@ export class AddQuestComponent implements OnInit {
 
   @ViewChild('closeBtn') closeBtn: ElementRef;
   public quest: Quest;
-  public modalName = 'Generate or Change a Quest';
+  public modalName;
   public dateOptions = {'year': 'numeric', month: 'long', day: 'numeric' };
 
   constructor(private addQuestService: AddQuestService, private router: Router, private commonService: CommonService) {
@@ -22,9 +22,11 @@ export class AddQuestComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.modalName = 'Add A Quest';
     this.commonService.questEdit_Observable.subscribe(res => {
       this.quest = this.commonService.quest_to_be_edited;
       console.log('editing quest is ' , this.quest._id);
+      this.modalName = 'Edit Your Quest';
     });
   }
 
