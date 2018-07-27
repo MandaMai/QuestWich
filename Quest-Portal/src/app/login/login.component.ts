@@ -45,7 +45,7 @@ export class LoginComponent {
         localStorage.setItem('traitListId', this.user.traitListId);
         localStorage.setItem('lastModifiedDate', this.user.lastModifiedDate);
 
-        this.router.navigate(['/home']);
+        this.router.navigate(['/profile']);
       } else {
 
         alert('Wrong username password');
