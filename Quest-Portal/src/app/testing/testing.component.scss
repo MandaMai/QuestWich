@@ -1,8 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+    min-height: 100%;
+  }
+
+
+
 [class*="fontItem"] {
     border: 0.5rem outset #41848F;
     margin: 10px;
     padding: 32px;
-    height: 300px;
+    height: 600px;
     text-align: center;
     align-content: center;
     vertical-align: middle;
@@ -20,13 +36,54 @@
     background-color: #F6F5F0;
     color: #192B33;
 }
+
+.circle1 {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: #41848F;
+    font-family: 'Crimson Text';
+    background: #192B33;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fontCircle2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: #192B33;
+    font-family: 'Crimson Text';
+    background: #41848F;
+}
 h1 {
     margin-top: 20px;
 }
+a {
+    color: #41848F;
+    text-decoration-line: none;
+}
+
 .fontItem1 { /*Font for Blogs*/
     font-family: 'Amatic SC';
 }
+.pAmatic {
+    font-family: 'Amatic SC';
+}
+
 .fontItem2 { /*Font for Main Site*/
+    font-family: 'Crimson Text';
+}
+
+.pCrimson {
     font-family: 'Crimson Text';
 }
 
@@ -84,4 +141,112 @@ p {
 .row {
     margin: 20px;
     margin-bottom: 20px;
+}
+
+small {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h2, h3, h4, h5, p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.circle1 {
+    position: relative;
+    display: block;
+    margin: 2em 0;
+    background-color: #41848F;
+    border-radius: 50%;
+    color: #F6F5F0;
+    text-align: center;
+    box-shadow: 5px 5px 10px -1px rgba(82,89,92,0.72);
+  }
+  
+  .circle1:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    content: "";
+  }
+  
+  .circle2 {
+    position: relative;
+    display: block;
+    margin: 2em 0;
+    background-color: #192B33;
+    border-radius: 50%;
+    color: #F6F5F0;
+    text-align: center;
+    box-shadow: 5px 5px 10px -1px rgba(82,89,92,0.72);
+  }
+  
+  .circle2:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    content: "";
+  }
+
+  .circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  @media (min-width:400px) {
+    [class*="fontItem"] {
+        height: 720px;
+    }
+    .circle__content {
+        font-size: .5em;
+    }
+  }
+  @media (min-width: 480px) {
+    .circle__content {
+        font-size: 1em;
+    }
+    [class*="fontItem"] {
+        height: 680px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .circle__content {
+        font-size: 2em;
+    }
+    [class*="fontItem"] {
+        height: 920px;
+  
+    }
+
+    @media (min-width: 992px) {
+        .circle__content {
+            font-size: 2em;
+        }
+        [class*="fontItem"] {
+            height: 680px;
+      
+        }
+    }
 }
