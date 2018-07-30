@@ -192,6 +192,10 @@ Huge shout out as this was by far the best tutorial and easiest to follow that I
 * [Temporary profile picture](http://marvel.wikia.com/wiki/Nomi_Blume_(Earth-1610))<br />
 * [Quest Map](http://quartermaester.info/)<br />
 * [Quest Image](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)<br />
+* [Muppet Alignment Chart](https://www.pinterest.com/pin/85216617918919824/?lp=true)<br />
+* [Harry Potter Alignment Chart](https://rantingsoftheninjarobot.files.wordpress.com/2012/01/harry-potter-custom.jpg)<br />
+* [Game of Thorones Alignment Chart2](https://imgur.com/gallery/74x0R)<br />
+* [Game of Thrones Alignment Chart](https://winteriscoming.net/2018/07/29/alignment-chart-weighs-morality-of-game-of-thrones-characters/)<br />
 
 ## :shipit: Color Palette
 ### :heavy_check_mark: Main Site Colors
