@@ -143,8 +143,8 @@ Give an example
 :link: [Angular CLI](https://cli.angular.io) - Used to create new application <br />
 :link: [Angular 6](https://angular.io) - The basic framework used for the application<br />
 :link: [MongoDB](https://docs.mongodb.com/manual/installation/) - The databased used for back end of application<br />
-:link: [Express.js](https://expressjs.com/) - Need more info but used for data/api manipulation<br />
-:link: [Mongoose.js](mongoosejs.com/) - I believe this was used for data schemas and data/api manipulation<br />
+:link: [Express.js](https://expressjs.com/) - Used for data/api manipulation<br />
+:link: [Mongoose.js](mongoosejs.com/) - Used for data schemas and data/api manipulation<br />
 :link: [GoogleFonts](https://fonts.google.com/) - Web fonts to use on site<br />
 :link: [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Basic App style prior to SCSS tinkering<br />
 :link: [FontAwesome](https://fontawesome.com/get-started) - Used to generate icons<br />
