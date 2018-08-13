@@ -39,7 +39,7 @@ npm install --save express mongoose express body-parser morgan serve-favicon hoe
 3. To Run front-end application open terminal to Quest-Portal and run ```npm start```
 
 ### Terminal - Mac
-1. To Run Mongo open terminal and run ```brew services start Mongo```
+1. To Run Mongo open terminal and run ```brew services start Mongo``` if not installed with Homebrew run this command ```mongod --dbpath data/db```
 2. To Listen using Mongo open terminal and run ```mongo --host 127.0.0.:270107``` <-- may not need this
 3. To Run app server open terminal to Quest-Portal/server and run ```node app.js```
 4. To Run front-end application open terminal to Quest-Portal and run ```npm start ```
