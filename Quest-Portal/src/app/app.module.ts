@@ -15,6 +15,8 @@ import { QuestDashboardComponent } from './quest-dashboard/quest-dashboard.compo
 import { ProfileComponent } from './profile/profile.component';
 import { ShowQuestComponent } from './show-quest/show-quest.component';
 import { AddQuestComponent } from './add-quest/add-quest.component';
+import { HeroBuilderComponent } from './hero-builder/hero-builder.component';
+import { BuilderDashboardComponent } from './builder-dashboard/builder-dashboard.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { AddQuestComponent } from './add-quest/add-quest.component';
     QuestDashboardComponent,
     ProfileComponent,
     ShowQuestComponent,
-    AddQuestComponent
+    AddQuestComponent,
+    HeroBuilderComponent,
+    BuilderDashboardComponent
   ],
   imports: [
     BrowserModule,
