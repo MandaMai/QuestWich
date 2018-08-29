@@ -8,7 +8,7 @@ const Quest = require('./model/quest');
 const app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}))
-const url = 'mongodb://localhost/QuestWich';
+const url = 'mongodb://localhost/QuestWich';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 app.post('/api/user/login', (req, res) => {
     mongoose.connect(url, function(err){
