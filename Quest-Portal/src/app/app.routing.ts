@@ -8,6 +8,8 @@ import { QuestDashboardComponent } from './quest-dashboard/quest-dashboard.compo
 import { ProfileComponent } from './profile/profile.component';
 import { ShowQuestComponent } from './show-quest/show-quest.component';
 import { AddQuestComponent } from './add-quest/add-quest.component';
+import { HeroBuilderComponent } from './hero-builder/hero-builder.component';
+import { BuilderDashboardComponent } from './builder-dashboard/builder-dashboard.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -16,7 +18,9 @@ export const AppRoutes: Routes = [
     { path: 'quest-dashboard', component: QuestDashboardComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'show-quests', component: ShowQuestComponent },
-    { path: 'add-quests', component: AddQuestComponent }
+    { path: 'add-quests', component: AddQuestComponent },
+    { path: 'hero-builder', component: HeroBuilderComponent },
+    { path: 'hero-dashboard', component: BuilderDashboardComponent }
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(AppRoutes);
