@@ -59,6 +59,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 :link: [Jasmine and Karma Testing](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/debug-test/basic-tests-with-jasmine?view=toolsforcordova-2017)<br />
 :link: [Angular Testing](https://angular.io/guide/testing)<br />
 :link: [Adding Dynamic Images](http://www.talkinghightech.com/en/angular-2-dynamic-urls-sanitizer/)<br />
+:link: [Skill List](http://examples.yourdictionary.com/examples-of-skills.html)<br />
+:link: [Career-based Skill list](https://novoresume.com/career-blog/most-important-skills-to-put-on-your-resume)<br />
+:link: [Skill Definition](https://www.google.com/search?rlz=1C5CHFA_enUS755US757&q=Dictionary#dobs=skill)<br />
+:link: [Trait list](http://ideonomy.mit.edu/essays/traits.html)<br />
+:link: [Trait Definition](https://www.google.com/search?q=trait&rlz=1C5CHFA_enUS755US757&oq=trait&aqs=chrome..69i57j0l2j69i60l3.4901j1j7&sourceid=chrome&ie=UTF-8)<br />
+:link: [Hobbies and Skills List](http://jillwilliamson.com/wp-content/uploads/2012/05/Character-Hobbies-and-Skills-Brainstorming-List.pdf)<br />
+:link: [Workplace Trait List](https://www.monster.ca/career-advice/article/50-personality-traits-for-the-workplace-canada)<br />
 
 ## :octocat: Pushing Changes to Git
 ###  :computer: Through Commandline
