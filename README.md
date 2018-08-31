@@ -207,6 +207,7 @@ Huge shout out as this was by far the best tutorial and easiest to follow that I
 * [Harry Potter Alignment Chart](https://rantingsoftheninjarobot.files.wordpress.com/2012/01/harry-potter-custom.jpg)<br />
 * [Game of Thorones Alignment Chart2](https://imgur.com/gallery/74x0R)<br />
 * [Game of Thrones Alignment Chart](https://winteriscoming.net/2018/07/29/alignment-chart-weighs-morality-of-game-of-thrones-characters/)<br />
+* [Sorting hat Picture](http://thescienceexplorer.com/sites/thescienceexplorer.com/files/blog/Wizarding_World_of_Harry_Potter_-_the_sorting_hat_%285013545663%29.jpg)<br />
 
 ## :shipit: Color Palette
 ### :heavy_check_mark: Main Site Colors
