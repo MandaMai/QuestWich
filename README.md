@@ -66,7 +66,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 :link: [Trait Definition](https://www.google.com/search?q=trait&rlz=1C5CHFA_enUS755US757&oq=trait&aqs=chrome..69i57j0l2j69i60l3.4901j1j7&sourceid=chrome&ie=UTF-8)<br />
 :link: [Hobbies and Skills List](http://jillwilliamson.com/wp-content/uploads/2012/05/Character-Hobbies-and-Skills-Brainstorming-List.pdf)<br />
 :link: [Workplace Trait List](https://www.monster.ca/career-advice/article/50-personality-traits-for-the-workplace-canada)<br />
-
+:link: [Angular Form Greatness](https://angular.io/guide/reactive-forms)<br />
 ## :octocat: Pushing Changes to Git
 ###  :computer: Through Commandline
 1. Go to application folder (Quest-Portal)
