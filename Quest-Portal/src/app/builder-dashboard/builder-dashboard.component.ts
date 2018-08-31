@@ -46,4 +46,8 @@ export class BuilderDashboardComponent implements OnInit {
     console.log('edit user is ', this.currentUser);
 
   }
+
+  newSetup() {
+    console.log('adding');
+  }
 }

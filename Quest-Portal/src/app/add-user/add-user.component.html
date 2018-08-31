@@ -12,20 +12,68 @@
   
                 <form>
                     <div class="form-group">
-                        <label for="email">Name of Your Quest</label>
+                        <label for="email">Email</label>
                         <input name="email" type="text" [(ngModel)]="user.email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter Email">
   
                         <label for="biography">Biography</label>
                         <textarea name="biography" [(ngModel)]="user.biography" class="form-control" id="userBiography" placeholder="Biography"></textarea>
 
-                        <label for="totalProgressCompleted">Total Campaign for Quest</label>
+                        <label for="totalProgressCompleted">Total Progress Completed</label>
                         <input type="number" name="totalProgressCompleted" [(ngModel)]="user.totalProgressCompleted" class="form-control" id="totalProgressCompleted" aria-describedby="totalProgressCompleted" placeholder="Enter Total Progress Completed">
                         
-                        <label for="birthdate">End Goal Date for Quest</label>
+                        <label for="birthdate">Birthdate</label>
                         <input type="date" name="birthdate" [value]="user.birthdate | date:'yyyy-MM-dd'" (input)="user.birthdate=parseDate($event.target.value)" class="form-control" id="birthdate" aria-describedby="birthdate" placeholder="Enter Birthdate">
-    
-                      </div>
+                    </div>
   
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input name="username" type="text" [(ngModel)]="user.username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter Username">
+
+                        <label for="password">Password</label>
+                        <input name="password" type="text" [(ngModel)]="user.password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter Password">
+  
+                        <label for="firstName">First Name</label>
+                        <input name="firstName" type="text" [(ngModel)]="user.firstName" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+  
+                        <label for="lastName">Last Name</label>
+                        <input name="lastName" type="text" [(ngModel)]="user.lastName" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter Last Name">
+  
+                        <label for="status">Status</label>
+                        <input name="status" type="text" [(ngModel)]="user.status" class="form-control" id="status" aria-describedby="statusHelp" placeholder="Enter Status">
+
+                        <label for="picture">Picture</label>
+                        <input name="picture" type="text" [(ngModel)]="user.picture" class="form-control" id="picture" aria-describedby="pictureHelp" placeholder="Enter Picture URL">
+
+                        <label for="traitListId">Skill List Id</label>
+                        <input name="traitListId" type="text" [(ngModel)]="user.traitListId" class="form-control" id="traitListId" aria-describedby="traitListIdHelp" placeholder="Enter Trait List Id">
+
+                        <label for="skillListId">Skill List Id</label>
+                        <input name="skillListId" type="text" [(ngModel)]="user.skillListId" class="form-control" id="skillListId" aria-describedby="skillListIdHelp" placeholder="Enter Skill List Id">
+
+                        <label for="totalProgressPending">Total Progress Completed</label>
+                        <input type="number" name="totalProgressPending" [(ngModel)]="user.totalProgressPending" class="form-control" id="totalProgressPending" aria-describedby="totalProgressPending" placeholder="Enter Total Progress Pending">
+                        
+                        <label for="lastModifiedDate">Last Modified Date</label>
+                        <input type="date" name="lastModifiedDate" [value]="user.lastModifiedDate | date:'yyyy-MM-dd'" (input)="user.lastModifiedDate=parseDate($event.target.value)" class="form-control" id="lastModifiedDate" aria-describedby="lastModifiedDate" placeholder="Enter Last Modified Date">
+
+                        <label for="createdDate">Created Date</label>
+                        <input type="date" name="createdDate" [value]="user.createdDate | date:'yyyy-MM-dd'" (input)="user.createdDate=parseDate($event.target.value)" class="form-control" id="createdDate" aria-describedby="createdDate" placeholder="Enter Created Date">
+
+                        <label for="closedDate">Closed Date</label>
+                        <input type="date" name="closedDate" [value]="user.closedDate | date:'yyyy-MM-dd'" (input)="user.closedDate=parseDate($event.target.value)" class="form-control" id="closedDate" aria-describedby="closedDate" placeholder="Enter Closed Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="personalityType">Personality Type</label>
+                        <select class="form-control" id="personalityType" name="personalityType" [(ngModel)]="user.personalityType">
+                            <option *ngFor="let personality of personalities" value="{{personality}}">{{personality}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="alignmentType">Alignment Type</label>
+                        <select class="form-control" id="alignmentType"name="alignmentType" [(ngModel)]="user.alignmentType">
+                            <option *ngFor="let alignment of alignments" value="{{alignment}}">{{alignment}}</option>
+                        </select>
+                    </div>
 
   
                     <button (click)="addUser()" type="button" class="btn btn-primary">Save</button>
