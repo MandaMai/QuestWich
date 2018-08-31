@@ -16,6 +16,8 @@ export class User {
         this.skillListId = '';
         this.traitListId = '';
         this.lastModifiedDate = '';
+        this.personalityType = '';
+        this.alignmentType = '';
         this._id = '';
     }
     public _id;
@@ -34,5 +36,7 @@ export class User {
     public totalProgressPending;
     public skillListId;
     public traitListId;
+    public personalityType;
+    public alignmentType;
     public lastModifiedDate;
 }

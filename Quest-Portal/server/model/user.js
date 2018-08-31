@@ -18,7 +18,10 @@ const userSchema = new Schema({
   totalProgressPending: { type: Number },
   skillListId: { type: String },
   traitListId: { type: String },
+  personalityType: { type: String },
+  alignmentType: { type: String },
   lastModifiedDate: { type: Date },
+
 
 }, { collection : 'user' });
  

@@ -43,7 +43,10 @@ export class LoginComponent {
         localStorage.setItem('totalProgressPending', this.user.totalProgressPending);
         localStorage.setItem('skillListId', this.user.skillListId);
         localStorage.setItem('traitListId', this.user.traitListId);
+        localStorage.setItem('personalityType', this.user.personalityType);
+        localStorage.setItem('alignmentType', this.user.alignmentType);
         localStorage.setItem('lastModifiedDate', this.user.lastModifiedDate);
+
 
         this.router.navigate(['/profile']);
       } else {
