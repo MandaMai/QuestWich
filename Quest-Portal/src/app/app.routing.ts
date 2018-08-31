@@ -10,6 +10,10 @@ import { ShowQuestComponent } from './show-quest/show-quest.component';
 import { AddQuestComponent } from './add-quest/add-quest.component';
 import { HeroBuilderComponent } from './hero-builder/hero-builder.component';
 import { BuilderDashboardComponent } from './builder-dashboard/builder-dashboard.component';
+import { SkillsComponent } from './skills/skills.component';
+import { TraitsComponent } from './traits/traits.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { AllLinksComponent } from './all-links/all-links.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent},
@@ -20,7 +24,11 @@ export const AppRoutes: Routes = [
     { path: 'show-quests', component: ShowQuestComponent },
     { path: 'add-quests', component: AddQuestComponent },
     { path: 'hero-builder', component: HeroBuilderComponent },
-    { path: 'hero-dashboard', component: BuilderDashboardComponent }
+    { path: 'hero-dashboard', component: BuilderDashboardComponent },
+    { path: 'skills', component: SkillsComponent },
+    { path: 'traits', component: TraitsComponent },
+    { path: 'add-user', component: AddUserComponent },
+    { path: 'all-links', component: AllLinksComponent }
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(AppRoutes);

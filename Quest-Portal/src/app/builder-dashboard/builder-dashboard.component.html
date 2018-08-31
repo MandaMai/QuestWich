@@ -1,4 +1,15 @@
-<p>
-  builder-dashboard works!
-</p>
+<header class="header clearfix">
+  <nav>
+      <ul class="nav nav-pills float-right">
+          <button #addUser type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                  Add a User
+                </button>
+                <button (click)="editSetup()" #addUser type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                  Edit Yourself
+                  </button>
+      </ul>
+  </nav>
+
+</header>
 <app-hero-builder></app-hero-builder>
+<app-add-user></app-add-user>

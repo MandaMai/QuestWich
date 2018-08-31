@@ -208,4 +208,90 @@ app.post('/api/quest/deleteQuest', (req, res) => {
     });
 })
 
+app.post('/api/user/createUser', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) return "Not able to connect to User Collection at this time: " + err;
+        const quest = new Quest({
+            //update fields here
+            username: req.body.username,
+            password: req.body.password,
+            email: req.body.email,
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            biography: req.body.biography,
+            birthdate: req.body.birthdate,
+            totalProgressCompleted: req.body.totalProgressCompleted
+
+        })
+        quest.save((err, doc) => {
+            if(err) {
+                return releaseEvents.status(400).json({
+                    status: 'fail',
+                    data: doc
+                })
+            }
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/user/updateUser', (req, res) => {
+    mongoose.connect(url, { useMongoClient: true }, function(err){
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
+        Quest.update(
+            {_id: req.body.id },
+            { 
+                //update user
+                username: req.body.username,
+                password: req.body.password,
+                email: req.body.email,
+                firstName: req.body.firstName,
+                lastName: req.body.lastName,
+                biography: req.body.biography,
+                birthdate: req.body.birthdate,
+                totalProgressCompleted: req.body.totalProgressCompleted
+             },
+            (err, doc) => {
+                if(err) {
+                    return releaseEvents.status(400).json({
+                        status: 'fail',
+                        data: doc
+                    })
+                }
+            return res.status(200).json({
+                status: 'success',
+                data: doc
+            })
+        })
+    });
+})
+
+app.post('/api/user/getUser', (req, res) => {
+    mongoose.connect(url, function(err){
+        if(err) return "Not able to connect to Quest Collection at this time: " + err;
+        User.find({
+            email : req.body.email, password : req.body.password
+        }, function(err, user){
+            if(err) throw err;
+            if(user.length === 1){  
+                return res.status(200).json({
+                    status: 'success',
+                    data: user
+                })
+            } else {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: 'Login Failed'
+                })
+            }
+             
+        })
+    });
+})
+
+
+
 app.listen(3000, () => console.log('blog server running on port 3000!'))
